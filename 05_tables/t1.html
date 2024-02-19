@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>tables</title>
+    <style>
+        table{
+            width:100%;
+        }
+        table,th,tr,td{
+            border: 1px solid blue;
+            padding: 10px;
+            border-spacing: 5px;
+
+        }
+
+
+        th,td{
+            height: 40px; ;
+            vertical-align: bottom;
+            text-align: center;
+            text-align: left;
+            text-align: right;
+            text-align: center;
+             
+        }
+        
+        caption{
+            caption-side: bottom;
+            caption-side: top;
+
+        }
+        
+        td{
+            empty-cells: hide;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>tabular data</caption>
+       <thead>
+        <tr>
+            <th > p no</th>
+            <th>product name</th>
+            <th> product price</th
+                >
+        </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+            <td>1</td>
+            <td>lg</td>
+            <td>5000</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>sony</td>
+            <td>5000</td>
+        </tr>
+        <tr>
+            <td >3</td>
+            <td>sony</td>
+            <td>5000</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td></td>
+            <td></td>
+        </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="2"> total price</td>
+                <td>1000000</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
