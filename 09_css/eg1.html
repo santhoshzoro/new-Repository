@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Document</title>
+</head>
+
+<!--1.styles-->
+
+<!-- 2.priority:
+
+  1.inline is having higher priority compare to internal and external
+  2.internal is having higher priority compare to external
+  3.external is lower priority compare to …. internal and inline-->
+
+
+<!--external style-->
+<link rel="stylesheet" href="./styles and priority.css">
+
+
+<!--internal style-->
+<style>
+    
+    
+    div{
+        border: 2px solid red;
+        margin: 2px;
+        padding: 2px;
+    }
+</style>
+<body>
+    <!--inline style-->
+    <div style="border: 2px solid blue ; margin: 2px; padding: 2px;"><b>Heloo i am learning html</b></div>
+</body>
+</html>
