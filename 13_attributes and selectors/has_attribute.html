@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        [href]{
+            border: 2px solid blue; 
+        }
+        [target="blank"]{
+            border: 2px solid red; 
+        }
+
+        [name^="username"]{
+            border: 2px solid green; 
+        }
+        [ href$="in"]{
+            border: 2px solid darkorchid; 
+        }
+        [ type*="email"]{
+            border: 2px solid yellow; 
+        }
+
+    </style>
+</head>
+<body>
+
+     <!--has attribute-->
+    
+    <a href="htpps:www.google.com">google</a>
+                                                 
+    <a href="htpps:www.facebook.com">facebook</a>
+
+
+    <!-- attribute value equals to-->
+
+    <a href="htpps:www.facebook.com" target="_blank">facebook</a>
+
+     <!--starts with-->
+
+    <label for="username">username</label>
+    <input type="text" name="username">
+
+     <!--ends with-->
+
+    <a href="htpps:www.amazon.in" target="_blank">amazon</a>
+
+    <label for="email">useremail</label>
+    <input type="email" name="useremail ">
+
+</body>
+</html>
