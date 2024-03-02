@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div ,p:first-child{
+            border: 2px solid red;
+            padding :2px;
+        }
+        div ,p:last-child{
+            border: 2px solid blue;
+            padding :2px;
+        }
+        div p::selection{
+            background-color: blue;
+        }
+        p::first-letter{
+            font-size: 80px;
+            color: green;
+        }
+
+        p::before{
+            content: "***";
+        }
+        p::after{
+            content: "***";
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, architecto. Fugit ipsa perspiciatis, quo velit aperiam tempore eius perferendis, nisi molestias sunt, adipisci deserunt a sint magnam assumenda dicta delectus!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, architecto. Fugit ipsa perspiciatis, quo velit aperiam tempore eius perferendis, nisi molestias sunt, adipisci deserunt a sint magnam assumenda dicta delectus!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, architecto. Fugit ipsa perspiciatis, quo velit aperiam tempore eius perferendis, nisi molestias sunt, adipisci deserunt a sint magnam assumenda dicta delectus!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, architecto. Fugit ipsa perspiciatis, quo velit aperiam tempore eius perferendis, nisi molestias sunt, adipisci deserunt a sint magnam assumenda dicta delectus!</p>
+    </div>
+</body>
+</html>
