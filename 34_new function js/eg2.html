@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="eg2.css">
+</head>
+<body>
+    <center>
+
+   <div class="container">
+    <br>
+    <div >
+        <label for="">Enter first number:</label>
+        <input type="number" placeholder="Enter first number" id="add1">
+    </div>
+    <br>
+    <div>
+        <label for="">Enter second number:</label>
+        <input type="number" placeholder="Enter second number" id="add2">
+    </div>
+</div>
+   
+    <button onclick="calculate()">CALCULATE</button>
+    <p id="add3"></p>
+
+    </center>
+    <script>
+        function calculate(){
+            var Number1 = document.getElementById('add1').value;
+            var Number2 = document.getElementById('add2').value;
+
+            document.getElementById('add3').innerHTML=Number(Number1)+Number(Number2)
+
+
+        }
+        
+    </script>
+    
+</body>
+</html>

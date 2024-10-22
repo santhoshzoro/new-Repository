@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Destructuring : extracting values from arrays and object 
+
+    #syntax :
+
+    const [var1,var2,var3.....varn]=[{},{}]
+
+    <script>
+        // array 
+        var number=[1,4,6,9,12]
+        var [a,b]=number
+        console.log(a)
+        console.log(b)
+
+        // skipping values 
+        var [, ,add]=number 
+        console.log(add)
+
+        // using rest operator :
+        var [italy,germany,...paris]=number
+        console.log(italy)
+        console.log(germany)
+        console.log(paris)
+
+        // object
+
+        var object={
+            name:'sanji',
+            age:20,
+            style:'shuriken',
+            gender:'male'
+        }
+        var {name:zoro,age:luffy,style:abc}=object
+        console.log(zoro)
+        console.log(luffy)
+        console.log(abc)
+
+        // providing default value in object
+
+        var {onepeice='robin'}=object
+
+        console.log(onepeice)
+
+        object.age=21
+        console.log(object.age)
+
+        // nested object 
+        
+        var obj={
+            id:1,
+            details:{
+                name:'sanji',
+                age:20,
+                style:'shuriken',
+                gender:'male',
+                address:{
+                    city:"blr",
+                    zipcode:572221,
+                    street:{
+                        line:4,
+                        house:'5th'
+                    }
+                }
+            }
+        }
+        var {details:{name,age,style,gender}}=obj
+        var {details:{address:{street:{line,house}}}}=obj
+        console.log(name)
+        console.log(age)
+        console.log(style)
+        console.log(gender)
+        
+        console.log(line)
+        console.log(house)
+
+        // / Function parameters destructuring
+
+        function pen({name,mobile}){
+            console.log(`NAME:${name} , MOBILE:${mobile}`)
+
+
+        }
+        let charger={name:'iphone',mobile:'16 pro'}
+        pen(charger)
+
+    </script>
+
+
+
+<script>
+    var array=[2,4,6,8]
+    var[a,b]=array
+    console.log(a,b)
+
+    var[a,b,...d]=array
+    console.log(a,b,d)
+
+    var[, , sub]=array
+    console.log(sub)
+
+    console.log(array[2])
+
+    var one={
+    
+        name:'karan',
+        age:23,
+        height:5.4
+    }
+    var {name:a,age:b,height:c}=one
+    console.log(a)
+    console.log(b)
+    console.log(c)
+
+    var {zoro='A swordsman'}=one
+    console.log(zoro)
+
+function abc({a,b,c}){
+    console.log(`A:${a}, B:${b}, C:${c}`)
+
+}
+var cat={a:'you', b:'love',c:'yourself'}
+abc(cat)
+
+
+</script>
+
+</body>
+</html>

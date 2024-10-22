@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="eg3.css">
+</head>
+<body>
+    <center>
+        <!-- <div class="container">
+            <br>
+            <div>
+                <label for="">Enter 1st number:</label>
+                <input type="number" placeholder="Enter 1st number"  id="sub1">
+            </div>
+            
+
+            <div>
+                <label for="">Enter 2nd number:</label>
+                <input type="number" placeholder="Enter 2nd number" id="sub2">
+            </div>
+            
+            <div>
+                <label for="">Enter 3nd number:</label>
+                <input type="number" placeholder="Enter 3nd number" id="sub3">
+            </div>
+    
+            <button onclick="calculate()">CALCULATE</button>
+            <p id="sub4"></p>
+        </div>  -->
+
+        <div class="container">
+            <div> 
+                <label for="">Enter email id:</label>
+                <input type="email"  placeholder="enter email" id="mul1">
+            </div>
+            <div>
+                <label for="">Enter password:</label>
+                <input type="password"  placeholder="enter password" id="mul2">
+            </div>
+            <button onclick="validate()">Validate</button>
+            <p id="errorMsg"></p> 
+        </div> 
+
+    </center>
+    <script>
+
+        var details=[
+            {
+                emailid : 'priya123@gmail.com',
+                password :"priya"
+            },
+        ];
+        function validate(){
+            var email = document.getElementById('mul1').value;
+            var password =document.getElementById('mul2').value;
+
+            if (details[0].emailid === email && details[0].password === password) {
+                 window.location.href = './eg2.html';
+                 alert("Login successful!");
+                // console.log('man')
+             }
+            
+             else {
+                 document.getElementById('errorMsg').innerHTML = 'Invalid email or password';
+                 document.getElementById('errorMsg').style.color = 'red';
+            }
+        }
+
+
+
+
+
+        // function calculate(){
+
+        //      var Number1 = document.getElementById('sub1').value;
+        //      var Number2 = document.getElementById('sub2').value;
+        //     var Number3 = document.getElementById('sub3').value;
+
+        //      document.getElementById('sub4').innerHTML= Number(Number1)+Number(Number2)+Number(Number3)      
+
+        //  }
+
+    </script>
+</body>
+</html>

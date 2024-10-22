@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    FUNCTION TYPES : (1).function constructor
+                     (2).anonymous function
+                     (3).self invoking function
+                     (4).higher order function 
+                     (5).call back function
+                     (6).closure function 
+
+        (1)FUNCTION constructor : The Function constructor creates a new function object.
+
+
+
+        let functionName = new Function(arg1, arg2, ..., "functionBody");
+
+
+
+        (2)ANONYMUOS FUNCTION : a function without function name  
+
+        #syntax : 
+        
+        var variableName =function(para1,para2.............paran){
+            return values
+        }
+        
+        (3)SLEF INVOKING FUNCTION : a function which is invoked by itself ,can call the function only once
+                                    a function without function name  
+
+        #syntax :
+
+        (function(){
+            statements
+        })()
+
+        (4)HEIGHER ORDER FUNCTION :  a function that takes 1 or more functions as arguments or returns a function as its result 
+
+        #syntax :
+
+        function a(){
+
+        }
+        function b(a){
+           
+        } b(a);
+
+        (5) CALL BACK FUNCTION : a function passed as an argument to another function and is executed after some operation has been completed.
+
+        #syntax :
+
+        function a(){
+
+        }
+        function b(a){
+           
+        } b(a);
+
+        (6)CLOSURE FUNCTION : A funnction having access to parent scope even after the parent function has closed . 
+
+        #syntax :
+
+        function A(){
+            var variableName=123
+            returns function (){
+                console.log(variableName)
+            }
+        }
+
+
+
+
+
+
+
+        
+        
+
+        <script>
+
+            // function construstor :
+
+            function dosa(){
+                this.name='cool',
+                this.age=32
+
+
+            }
+            var hot=new dosa()
+            console.log(hot.name)
+            console.log(hot.age)
+        
+
+
+
+          
+
+        //   #ANONYMUOS :
+
+
+        var details =function(){
+            console.log('tatakaee')
+        }
+        details()
+
+        // call back :
+
+        function a1(b1){
+            console.log('onepeice')
+             b1()
+
+        }
+        function c1(){
+            console.log('jjk')
+
+        }
+
+        a1(c1);
+
+        // self invoking function :
+
+    //    (function(P){
+    //         console.log('edho okati rayali')
+
+    //     })(p)
+
+        // HIGHER ORDER FUNCTION :
+
+       
+        function name1(a1){
+            console.log('winter arc')
+            a1()
+        }
+        function name2(){
+            console.log('has to commplete')
+            
+        }
+        function name3(){
+            console.log('then you be succesfull')
+        }
+        name1(name2)
+        name3()
+
+        // CLOSURE FUNCTION :
+
+        function  a(){
+            var closure =12365
+            return function (){          
+                //  here we have to use anonymus function (use function with out function name)
+                console.log(closure)
+            }
+        }
+        a()()
+
+        
+
+        
+        </script>
+</body>
+</html>

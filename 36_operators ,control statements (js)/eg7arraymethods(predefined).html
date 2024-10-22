@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    ARRAY METHODS : (1).toString() ----- converts array into string
+                    (2).push() -----insert element at last index position
+                    (3).pop()-------delete element at last index position
+                    (4).splice() ------1st index position and then delete count (2,2) --- deletes both index position and delete count
+                    (5).slice() -------- array includes the element at the start index but excludes the element at the end index.
+                    (6).concat() -------joins more than one array 
+                    (7).sort()--------- sort the values in ascending order
+                    (8).reverse()------- to reverse the values in array 
+
+
+    <script>         
+        var mobiles= ['iphone','samsung','pixel','vivo','mi','realme']
+        console.log(mobiles.toString())
+
+        // push
+        mobiles.push('redme')
+        console.log(mobiles)
+
+        // pop
+
+        mobiles.pop()
+        console.log(mobiles)
+        
+        // splice..--- deletes both index position and delete count
+
+        mobiles.splice(1,2)
+        console.log(mobiles)
+       
+        // slice:
+
+        var mobiles1= ['iphone','samsung','pixel','vivo','mi','realme']
+        var newArr = mobiles1.slice(2,4);
+        console.log(newArr)
+
+        // concat ;
+         
+        var mobiles3=['iphone','samsung','pixel','vivo',1,55,'mi','realme']
+        var newMobiles=['15pro',"s25ultra",'pixel2','moonlight flash']
+        var allMobiles=mobiles3.concat(newMobiles)
+        console.log(allMobiles)
+
+        var shitMobiles =newMobiles.concat(mobiles3)
+        console.log(shitMobiles)
+
+        // sort
+
+        console.log(mobiles3.sort())
+
+        // reverse 
+
+        console.log(newMobiles.reverse())
+
+
+
+    </script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    OBJECT METHODS : Object.keys(object)
+                     Object.values(object)
+                     Object.entries(object)
+                     Object.assign(target,source)
+                     Object.freeze(object) ---------Freezes an object, making it immutable (no properties can be added, removed, or changed).
+                     Object.seal(object) --------Seals an object, preventing new properties from being added or existing properties from being deleted, though property values can still be modified.
+                     Object.defineProperty(object,property,descripter)
+
+
+
+                     <script>
+                        var details ={
+
+                            name :'santhosh',
+                            age:'21',
+                            rollNo:'0136',
+                            college:'RMd'
+                         }
+
+                         console.log(Object.keys(details))
+                         console.log(Object.values(details))
+                         console.log(Object.entries(details))
+                        //  .................................................
+
+                        // Object.assign(target,source)
+
+                        var student=Object.assign({},details)
+                        student.name='luffy'
+                        console.log(student,details)
+
+                        // ........................................................
+
+                        // Object.defineproperty(object,property,descripter)
+
+                        Object.defineProperty(details,'college',{value:'srm'})
+                        console.log(details)
+                        // ....................................................`.....
+
+                        // Object.freeze(object)  
+                        // Freezes an object, making it immutable (no properties can be added, removed, or changed).
+
+
+                        // const obj = { a: 1 };
+                            // Object.freeze(obj);
+                            // obj.a = 2;  // No effect
+                            // console.log(obj.a);  // 1
+
+                            Object.freeze(details);
+                            details.age='2';
+                            console.log(details.age)
+                    
+                    // ......................................................................
+
+
+                    //  Object.seal(object) ..Seals an object, preventing new properties from being added or existing properties from being deleted, though property values can still be modified.
+
+                      const obj = { a: 1 };
+                        Object.seal(obj);
+                        obj.a = 2;  // This works
+                        delete obj.a;  // This fails
+                        console.log(obj.a);
+
+                        // var config = Object.seal({
+        //     backendServerUrl: 'http://crm.digital-lync.com',
+        //     port: 4000,
+        //     username: 'admin',
+        //     password: 'admin'
+        // });
+        // delete config.port;
+        // console.log(config);
+
+
+                    Object.seal(details);
+                    details.rollNo='42';
+                    delete details.rollNo;
+                    console.log(details.rollNo);
+
+                    Object.seal(details);
+                    details.rollNo='40'
+                    Update.details.rollNo='40'
+                    delete details.rollNo;
+                    console.log(details.rollNo);
+                    // ....................................................................
+
+                    var config = Object.seal({
+                        backendServerUrl: 'http://crm.digital-lync.com',
+                         port: 4000,
+                            username: 'admin',
+                            password: 'admin'
+
+                    })
+                    delete config.port;
+                     console.log(config);
+
+
+
+
+
+
+  
+
+
+
+
+
+                         
+                          
+
+
+                        
+                     </script>
+</body>
+</html>

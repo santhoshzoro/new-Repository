@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="add1"></p>
+    <script>
+        var a=5
+        console.log(a)
+        document.getElementById('add1').innerHTML=a
+        // window.alert('error')
+    </script>
+
+    <!-- VARIABLES -->
+     
+    <script>
+        var name1='name'
+        console.log(name1)
+    </script>
+
+    <!-- HOISTING -->
+
+    <script>
+        console.log(nameTwo)
+        var nameTwo='somename';
+    </script>
+
+    <!-- arrays -->
+
+    <script>
+        var variableName=['apple','banana','mango','pine-apple']
+        console.log(variableName[1])
+        variableName[1]='orange'
+        console.log(variableName)
+        variableName.splice(2,2)
+        console.log(variableName)
+    </script>
+
+    <!-- objects -->
+
+    <script>
+        var a={
+            name:'deepka', 
+            age:20,
+            number:778521741
+        }
+        console.log(a)
+        console.log(a.name)
+        a.name='chetan'
+        console.log(a.name)
+        
+    </script>
+
+    <!-- array of objects -->
+
+    <script>
+        var b=[
+    {
+        name:'raj',
+        age:20,
+        mobile:3216549877
+    },
+    {
+        name:'rani',
+        age:22,
+        mobile:9876543621
+    },
+    {
+        name:'pant',
+        age:20,
+        mobile:321654789
+    },
+
+];
+
+
+console.log(b)
+console.log(b[1])
+console.log(b[2].age)
+b[0].age=18
+console.log(b)
+console.log(b.length)
+b.splice(0,1)
+console.log(b)  
+    </script>
+
+    <!-- Data Types ..........................................................................-->
+
+       <!-- DATA TYPES : describes different types of data
+
+        // 1.user defined---(array,obejects,functions)
+        // 2.pre defined --already existed (string,int,bool,float) -->
+
+    <script>
+        // string
+        var a='read'
+        console.log(typeof(a))
+
+        // int
+
+        var b=223652
+        console.log(typeof(b))
+
+        // float
+
+        var c=12.3
+        console.log(typeof(c))
+
+        // bool
+
+        var d=true
+        console.log(typeof(d))
+
+        // function
+
+        var e=function(){
+            console.log(typeof(e))
+        }
+
+        // object
+
+        var f ={
+            ab:123
+        }
+        console.log(typeof(f))
+
+        // array
+
+        var g =[1,2,3,4,5,6]
+        console.log(typeof(g))
+
+        var  h= undefined
+        console.log(typeof(h))
+
+        var i=null
+        console.log(typeof(i))
+
+
+    </script>
+
+    <!-- FUNCTIONS ...................................................................... -->
+
+    <!-- function a(para1,par2,....para n){
+
+    } -->
+
+    <script>
+        // without args(parameters)
+        function add1(){
+            console.log('onepeice')
+        }
+        add1()
+        // with args(parameters)
+        function add2(a,b,c,d){
+            console.log(a+b+c+d)
+        }
+        add2(5,5,5,5)
+
+        // with args(parameter) also return 
+        function add3(p,q,r,s){
+            return p**q/r+s
+
+        }
+        console.log(add3(2,5,4,2))
+    </script>
+
+
+
+
+ <script>
+     for(i=10;i>0;i--){
+        console.log('is true') 
+    
+    }
+    var a=3
+    while(a>1){
+        console.log('is really true')
+        a--;
+
+    }
+    var c=1
+    do{
+        console.log('ffffff')
+        c++;
+    }
+    while(c<5)
+
+    // LITERALS .................................................................................
+     
+    var a='iphone'
+    var b='uses by me'
+    var c=`${a},${b}`
+    console.log(c)
+
+    var d={
+        mobile:'samsung',
+        model:'s24'
+    }
+    console.log(d)
+    var e=`${d.mobile},${d.model}`
+    console.log(e)
+
+    // ...............................................................................................
+
+    
+
+    
+     
+ </script>
+
+
+
+
+
+</body>
+</html>

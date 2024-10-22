@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    STRING METHODS : 
+                    (1)str.length --returns length of string 
+                    (2)str.charAt(index) --- returns the character specified index
+                    (3)str.lastIndexOf(searchvalue) ------returns the lastindex
+                    (4)str.indexOf(searchvalue) ------ returns the 1st value 
+                    (5)str.slice(startindex,endindex) --------array includes the element at the start index but excludes the element at the end index.
+                    (6)str.subString(startindex,endindex) ----- returns a new string .....(Does not support negative indices. If a negative index is passed, it is treated as 0)
+                    (7)str.includes(searchString) --------return true if string contains sub string or else false
+                    (8)str.concat(string) -------contact 2 or more strings and returns new strings
+                    (9)str.toUpperCase() ------- converts string to UpperCase
+                    (10)str.toLowerCase() ------ converts string to LowerCase
+                    (11)str.trim()       ---------- remove white space from both ends
+                    (12)str.split(separator) ------- split the string into array
+                    (13)str.replace(searchvalue,replacevalue)---------replace a specified value with another value
+
+
+                    <script>
+                        var newString ='      I am a waste fellow learning a very difficult language named javascript and converting my self into unreal waste fellow and the person who is teaching is a transgender(gay)        '
+                        var newstring1=',but i am a good guy by the way'
+                        var newstring2=newString.concat(newstring1)
+                        console.log(newstring2)
+                        console.log(newString.length)
+                        console.log(newString.charAt(3))
+                        console.log(newString.lastIndexOf('m'))
+                        console.log(newString.indexOf('waste'))
+                        console.log(newString.slice(7,71))
+                        console.log(newString.substring(7,10)) 
+                        console.log(newString.includes('fellow'))
+                        console.log(newString.includes('onepeice'))
+                        console.log(newString.toUpperCase())
+                        console.log(newString.toLowerCase())
+                        console.log(newString.trim())
+                        console.log(newString.split(''))
+                        console.log(newString.replace('transgender','girl'))
+                        
+
+
+                    </script>
+
+
+</body>
+</html>

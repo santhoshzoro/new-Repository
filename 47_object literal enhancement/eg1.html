@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    OBJECT LITERALS ENHNACEMENT : allows more compact and readable code while defining objects
+
+                             (property of same name)-short end property name 
+                             (methods)-short end methods
+
+    PROPERTY OF SAME NAME
+
+    <script>
+
+        var sensei='you are my true teacher(sensei)'
+        var akastki='akastki a group of roge ninja '
+        var shinobi='a true one never lets their comrades die'
+        var phone={
+            sensei,
+            akastki,
+            shinobi,
+            naruto(){
+                console.log(`The main theme is that ${this.sensei} and ${this.akastki} and also ${this.shinobi}`)
+            }
+        }
+        phone.naruto()
+        console.log(phone.sensei)
+        console.log(phone.akastki)
+        console.log(phone.shinobi)
+
+
+    </script>
+
+    <script>
+
+        var a='you'
+        var b='are '
+        var c='so meaningful'
+        var d={
+            a,
+            b,
+            c,
+            girl(){
+            console.log(`I know ${this.a} ${this.b} ${this.c} `)
+
+            }
+        }
+        d.girl()
+        
+
+
+    </script>
+
+</body>
+</html>

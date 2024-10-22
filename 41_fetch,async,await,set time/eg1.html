@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<head>
+<title> DOCUMENT</title>
+</head>
+<body>
+  
+    <script>
+        setTimeout(function(){
+            console.log('i love onepeice')
+        },3000)
+
+        // print after 3000 mili sec 
+
+        setInterval(function(){
+            console.log('luffy is min charecater ')
+        },4000)
+        
+        // ........................................................................................
+
+        // fetch:
+
+        
+        fetch('https://dummyjson.com/auth/login',{
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify ({
+                                    username: 'emilys',
+                                    password: 'emilyspass'
+                                })
+                    }).then(function(response){
+                        return response.json()
+                    }).then (function(formattedResponse){
+                        console.log(formattedResponse)
+                    }).catch(function(error){
+                        console.log(error)
+              })
+
+
+//   ..................................................................................................
+
+              async function a(){
+
+                try{
+                    var b=await fetch('https://dummyjson.com/auth/login',{
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify ({
+                                    username: 'emilys',
+                                    password: 'emilyspass'
+                                })
+                            })
+                    var c=await b.json()
+                    console.log(c) 
+
+                }
+                catch(error){
+                    console.log(error)
+                }
+                
+              }
+              a()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+              fetch('https://dummyjson.com/auth/login',{
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify ({
+                                    username: 'emilys',
+                                    password: 'emilyspass'
+                                })
+                    }).then(function(response){
+                        return response.json()
+                    }).then(function(name){
+                        console.log(name)
+
+                    }).catch(function(error){
+                        console.log(error)
+                    })
+
+
+
+
+
+                    async function b(){
+                        try{
+                            var c=await fetch('https://dummyjson.com/auth/login',{
+                                    method: 'POST',
+                                    headers: { 'Content-Type': 'application/json' },
+                                    body: JSON.stringify ({
+                                    username: 'emilys',
+                                    password: 'emilyspass'
+                                })
+                            
+                            })
+                            var d=await c.json()
+                            console.log(d)
+                            
+                        }catch(error){
+                            console.log(error)
+                        }
+                    }
+                    b()
+
+                            
+
+
+
+
+
+
+
+
+
+
+    </script>
+
+</body>
+</html>

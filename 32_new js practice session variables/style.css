@@ -1,0 +1,54 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+.container{
+    width:75%;
+    height:330px;
+    border: 3px solid whitesmoke;   
+    margin-bottom: 25px;
+    margin-left:140px;
+    margin-top: 15px;
+    display: flex;
+    border-radius: 10px;
+}
+.image{
+    width:200px;
+    height:230px;
+    margin-top: 25px;
+    margin-left: 25px;
+    margin-right: 10px;
+    object-fit: contain;
+}
+.img{
+    background-color: whitesmoke;
+}
+.con-1{
+    width:65%;
+    margin-left: 12px;
+}
+.s1{
+    font-weight: bolder;
+    font-size: 25px;
+}
+.s3{
+text-decoration: line-through;
+}
+.delivery{
+    font-weight: bold;
+}
+.btn{
+    padding:8px;
+    border: none;
+    background-color: #fdd815;
+    border-radius: 15px;
+}
+.bi-star-fill{
+    color:#ffa41e;
+}
+.bi-star-half{
+    color:#ffa41e;
+}
+.bi-star{
+    color:#ffa41e;
+}
+h3:hover{
+    color:red;
+}

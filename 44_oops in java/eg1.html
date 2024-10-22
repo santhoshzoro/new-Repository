@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    OOPS IN JAVA SCRIPT :
+    objects and classes ,
+    properties and methods,
+    contructor function ,
+    Getters and Setters ,
+    prototypes,
+    inheritance,
+
+    object : normal obj , an object is a collection of properties where each property has a key (string) and a value (any data type or function),var mm={ key : 'value'  }
+    class :  A class is a blueprint for creating objects. Classes encapsulate data and behavior
+    inheritance : sharing info from one class to another class
+    #syntax :
+
+    class parentclass{
+        constructor(''){
+
+        }
+        method name(){
+
+        }
+    }
+    class childclass extends parentclass{
+        constructor(){
+            super('')
+        }
+        method name(){
+
+        }
+    }
+
+<script>
+    class vehicle{
+        constructor(bus){
+            this.bus=bus
+        }
+        start(){
+            console.log(`${this.bus} after starting there is no ending`)
+
+        }
+    } 
+    class small extends vehicle{
+        constructor(bus,bigbus){
+            super(bus)
+            this.bigbus=bigbus
+        }
+        stop(){
+            console.log(`${this.bigbus} also after stoping no starting`)
+        }
+
+    }
+
+var road=new small('nellore','hyd')
+road.start();
+road.stop();
+</script>
+
+
+
+<script>
+    class desk{
+        constructor(pen){
+            this.pen=pen
+        }
+        pencil(){
+            console.log(`${this.pen}`)
+        }
+
+    }
+    class pad extends desk {
+        constructor(pen,blue){
+            super(pen)
+            this.blue=blue
+           
+        }
+        black(){
+            console.log(`${this.blue}`)     
+           }
+
+        
+    }
+    var eraser = new pad('bold pen','blue pen')
+    eraser.pencil();
+    eraser.black();
+
+</script>
+
+<script>
+    class mobiles{
+        constructor(newmobiles){
+            this.newmobiles=newmobiles
+        }
+        phone(){
+            console.log(`${this.newmobiles} they are pretty awsome`)
+        }
+    }
+    class samsung extends mobiles {
+        constructor(newmobiles,oldmobiles){
+            super(newmobiles)
+            this.oldmobiles=oldmobiles
+        }
+        newphone(){
+            console.log(`${this.oldmobiles} also these are better than them`)
+        }
+    }
+
+    var sale=new samsung('iphone','samsung')
+    sale.phone();
+    sale.newphone();
+</script>
+
+<script>
+    class bed{
+        constructor(pillow){
+            this.pillow=pillow
+
+        }
+        big(){
+            console.log(`${this.pillow} comfortable to sleep but `)
+        }
+    }
+    class bedsheet extends bed{
+        constructor(pillow,girl){
+            super(pillow)
+            this.girl=girl 
+        }
+        small(){
+            console.log(`${this.girl} not so comfortable to sleep and satisfied `)
+        }
+    }
+    var abc= new  bedsheet('big bed','smallbed ');
+    abc.big();
+    abc.small();
+
+   </script>
+
+<!-- ................................................................................................ -->
+
+
+constructor: this: to create new object 
+             new : predefined key word
+
+Syntax# :
+
+funtion funtionname(---arguments){
+    this.--- =----
+
+}
+var variableName=new funtionname(--- has to write in '' just name)
+console.log(variableName.argumnets)
+
+     
+<script>
+    function button(push,pop){
+        this.push=push
+        this.pop=pop
+    }
+    var cart=new button('push','notify')
+    console.log(cart.push)
+    console.log(cart.pop)
+</script>
+
+<script>
+    function name(france){
+        this.france=france
+    }
+    var var5=new name('eifle tower')
+    console.log(var5.france)
+   </script>
+
+<!-- ..................................................................................................................... -->
+
+
+PROTYPE:allows attaching methods and proprties
+{object}
+variablename.__proto__ 
+<script>
+
+    var var1={
+        name:'paris'
+    }
+    console.log(var1.__proto__)
+
+</script>
+
+includes : 1)toString()
+           2)valueOf()
+           3)hasOwnProperty()
+
+           <script>
+            var var2={
+                follower: "voilet"
+ 
+            }
+            var var3={
+                name:'italy'
+
+            }
+            var var4={
+                
+            }
+           
+            console.log(var2.toString())
+            console.log(var3.valueOf())
+            console.log(var4.hasOwnProperty())
+            
+           </script>
+  <!-- ......................................................................................................          -->
+
+           GETTERS AND SETTERS:
+
+           <script>
+            var getters={
+                get age(){
+                    return this._age
+                    
+                },
+                
+                set age(value){
+                    this._age=value<0 ?  'execute':value
+                }
+            }
+            getters.age=22
+            console.log(getters.age)
+           </script>
+
+           <script>
+            var object={
+                get phone(){
+                    return this._phone
+                    
+                },
+                set phone(number){
+                    this._phone=number==88868588583 ? 'crt number':'wrong number'
+                    
+
+
+                }
+            }
+            object.phone=8886858858
+            console.log(object.phone)
+        
+
+           </script>
+
+           
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/DUxjLC4lQPY?si=5_p3MzXcQ6i75cUA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+           
+
+
+
+</body>
+</html>

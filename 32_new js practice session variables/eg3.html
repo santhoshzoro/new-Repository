@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="img">
+        <img src="https://m.media-amazon.com/images/I/7169hX0S18L.AC_UY327_FMwebp_QL65.jpg" alt="" class="image">
+        </div>
+        <div class="con-1">
+        <h3 id="mobile-name"></h3>
+        <p>
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star-half"></i>
+      </p>
+        <p id="para"> 
+        <span id="big" class="s1"></span>
+        <span id="amount" class="s3"></span>
+        <span id="offer" class="s4"></span>
+    </p>
+    <p id="cost"></p>
+    <p id="delivery">
+        <span id="delivery1"></span> <br>
+        <span id="delivery2" class="delivery"></span>
+    </p>
+     <p id="product">
+        <span id="delivery3"></span>
+        <span id="delivery4"class="delivery"></span>
+     </p>   
+     <button id="btn" class="btn"></button>
+    </div>
+    </div>
+    <!-- <------------------2nd image----------------->
+    <div class="container">
+        <div class="img">
+          <img src="https://m.media-amazon.com/images/I/71scmEdSC2L.AC_UY327_FMwebp_QL65.jpg" alt="" class="image">
+        </div>
+        <div class="con-1">
+        <h3 id="mobile-name1"></h3>
+        <p>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star"></i> 300
+        </p>
+        <p id="para"> 
+        <span id="big1" class="s1"></span>
+        <span id="tag1"></span>
+        <span id="amount1" class="s3"></span>
+        <span id="offer1" class="s4"></span>
+        </p>
+    <p id="cost1"></p>
+    <p id="delivery">
+        <span id="delivery5"></span> <br>
+        <span id="delivery6" class="delivery"></span>
+    </p>
+      <p id="product">
+        <span id="delivery7"></span>
+        <span id="delivery8"class="delivery"></span>
+      </p>   
+    <button id="btn1" class="btn"></button>
+    </div>
+    </div>
+     <script>
+        // <--------1st image--------->
+         var mobileName = 'Redmi Note 13 5G (Arctic White, 6GB RAM, 128GB Storage) | 5G Ready | 120Hz Bezel-Less AMOLED | 7.mm Slimmest Note Ever | 108MP Pro-Grade Camera';
+         document.getElementById('mobile-name').innerHTML = mobileName;
+         var text='₹16,999';
+         document.getElementById('big').innerHTML=text;
+         var Tag='M.R.P:';
+         document.getElementById('tag').innerHTML=Tag;
+         var mobilePrice='₹20,999';
+         document.getElementById('amount').innerHTML=mobilePrice;
+         var mobileOffer='(19% off)';
+         document.getElementById('offer').innerHTML=mobileOffer;
+         var mobileCost='Save extra with No Cost EMI';
+         document.getElementById('cost').innerHTML=mobileCost;
+         var mobileDelivery1='FREE delivery as soon as Sun,4 Aug,';
+         document.getElementById('delivery1').innerHTML=mobileDelivery1;
+         var mobile=' 9 am - 5 pm';
+         document.getElementById('delivery2').innerHTML=mobile;
+         var mobileDeliveryDate='Or fastest delivery ';
+         document.getElementById('delivery3').innerHTML=mobileDeliveryDate;
+         var mobileDeliveryDate1=' Sat, 3 Aug ';
+         document.getElementById('delivery4').innerHTML=mobileDeliveryDate1;
+         var button='Add to cart';
+         document.getElementById('btn').innerHTML=button;
+         
+        //  <----------2nd image---------->
+        var mobileName = 'Redmi 13C (Starfrost White, 6GB RAM, 128GB Storage) | Powered by 4G MediaTek Helio G85 | 90Hz Display | 50MP AI Triple Camera';
+        document.getElementById('mobile-name1').innerHTML = mobileName;
+         var text='₹8,499';
+         document.getElementById('big1').innerHTML=text;
+         var Tag='M.R.P:';
+         document.getElementById('tag1').innerHTML=Tag;
+         var mobilePrice='₹13,999';
+         document.getElementById('amount1').innerHTML=mobilePrice;
+         var mobileOffer='(39% off)';
+         document.getElementById('offer1').innerHTML=mobileOffer;
+         var mobileCost='Save extra with No Cost EMI';
+         document.getElementById('cost1').innerHTML=mobileCost;
+         var mobileDelivery1='FREE delivery as soon as Sun,4 Aug, ';
+         document.getElementById('delivery5').innerHTML=mobileDelivery1;
+         var mobile=' 9 am - 5 pm';
+         document.getElementById('delivery6').innerHTML=mobile;
+         var mobileDeliveryDate='Or fastest delivery ';
+         document.getElementById('delivery7').innerHTML=mobileDeliveryDate;
+         var mobileDeliveryDate1=' Sat, 3 Aug ';
+         document.getElementById('delivery8').innerHTML=mobileDeliveryDate1;
+         var button='Add to cart';
+         document.getElementById('btn1').innerHTML=button;
+        //  <_-----------3rd image----------->
+        
+     </script>
+</body>
+</html>
+
+

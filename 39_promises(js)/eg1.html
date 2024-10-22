@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    PROMISES :
+     
+        used to handle asynchronus operations in a more organised way 
+
+        like - resolve (value,sucess), reject( error,failure)
+
+        #syntax
+
+        var promiseObject = new Promise(function(resolve,reject){
+            var i=0;
+            if(){
+
+            }else{
+
+            }
+        });
+        promiseObject.then(function(response){
+            console.log(response written in above)
+
+        }).catch(funtion(error)){
+            console.log(error)
+        }
+
+
+        <script>
+
+            var name1 = new Promise(function(resolve,reject){
+                var i=3
+                if(i>3){
+                    console.log('sucess')
+                }
+                else{
+                    console.log('now sucess')
+                }
+
+            });
+            name1.then(function(sucess){
+                console.log(sucess)
+            }).catch(function(Error){
+                console.log(Error)
+            })
+
+            // ...............................................................................................
+
+            var name2 = new Promise(function(resolve,reject){
+                var id='you are so good '
+                var id1=2
+                var age =18
+
+                if (age>18){
+                    console.log('eligibile')
+                }
+                 else if(id1==3){
+                     console.log('correct entry')
+
+                 }
+                else{
+                    console.log('not eligible')
+                }
+
+            });
+            name1.then(function(sucess){
+                console.log(sucess)
+            }).catch(function(Error){
+                console.log(Error)
+            })
+
+
+            var objects=[{
+                name:'priya',
+                age:18
+
+            },
+            {
+                name:'me prasanth',
+                age:19
+            },
+            {
+                name:'me inko prasanth',
+                age:15
+            }
+        ];
+        if(objects[0].age>=19){
+            console.log('valid for vote')
+        }else if (objects[2].age>18){
+            console.log('not valid for vote')
+        }
+        else{
+            console.log('Error')
+        }
+
+        var object1 =objects.filter(function(nami,index){
+            return nami.age>=18
+        })
+        console.log(object1)
+
+        var voters = [
+            {
+                id: 1,
+                firstName: "John",
+                lastName: "Doe",
+                age: 28,
+                gender: "Male",
+                registered: true,
+                voted: false
+            },
+            {
+                id: 2,
+                firstName: "Jane",
+                lastName: "Smith",
+                age: 34,
+                gender: "Female",
+                registered: true,
+                voted: true
+            },
+            {
+                id: 3,
+                firstName: "Alice",
+                lastName: "Johnson",
+                age: 22,
+                gender: "Female",
+                registered: false,
+                voted: false
+            },
+            {
+                id: 4,
+                firstName: "Bob",
+                lastName: "Brown",
+                age: 45,
+                gender: "Male",
+                registered: true,
+                voted: true
+            },
+            {
+                id: 5,
+                firstName: "Carol",
+                lastName: "Davis",
+                age: 30,
+                gender: "Female",
+                registered: true,
+                voted: false
+            }
+        ];
+
+        var voters1 = voters.filter(function(value,index){
+            return value.age>18 && value.gender=='Male'
+        })
+        console.log(voters1)
+        
+
+    </script>
+
+</body>
+</html>

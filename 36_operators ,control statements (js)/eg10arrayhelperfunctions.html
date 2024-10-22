@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    ARRAY HEPLER METHODS :  forEach,map,filter,reduce 
+    
+    ForEach :#syntax (Executes a provided function once for each array element. It doesn't return a new array.)
+              
+             arrayName.forEach(function(value,index){
+                <<<<<<<<<<statements>>>>>>
+             })
+
+    MAP : #syntax (Creates a new array by applying a function to each element in the original array.)
+         
+
+         arrayName.map(function(value,index){
+            <<<<<<<<<<statements>>>>>>
+              return 
+         })
+
+    Filter :#syntax (to filter the values)
+    
+            arrayName.filter(function(value,index){
+                <<<<<<<<<<statements>>>>>>
+                  
+                  return
+             })
+
+    Reduce  : #syntax
+
+             arrayName.reduce(function(acculmator,value){
+                return statements
+             },initial value)
+
+
+             <script>
+
+               // spread operator (...)
+                a=[1,2,3,4,5]
+                b=[6,7,8,9,10]
+                c=[...a,...b]
+                console.log(c)
+
+                a1={
+                  name1:'luffy',
+                  age1:'18'  
+                },
+                b1={
+                  name2:'zoro',
+                  age2:'19'
+                  
+                },
+                c1={...a1,...b1},
+                console.log(c1)
+
+               //  RESTOPERATORS
+
+                function f1(a,b,...c){
+
+
+                  console.log(a)
+                  console.log(b)
+                  console.log(c)  
+                }
+                f1(1,2,3)
+                f1(4,5,6,8)
+                f1(7,8,9,2,5,8)
+
+
+
+
+
+
+               //  FOR EACH : 
+                  
+                 var details =[1,2,3,4,5,6,7,8,9]
+                // details.forEach(function(zoro,index){
+                //   console.log(zoro,index)
+                // })
+
+               details.forEach(luffy=>{
+                  luffy=luffy%2==0
+                  console.log(luffy)
+
+                })
+
+                // MAP :
+
+                 var sanji=[1,2,3,4]
+                 var nami=sanji.map(Number=>Number/2)
+                 console.log(nami)
+
+
+                // FILTER :
+
+                var robin =[1,2,3,4,5,6,7,8,9,7,8,9,4,5,6,1,2,3,2,5,56,5,32,3,6,85,2,3,56,2,,52,4,1,156,461,20564,31,324,61.2,16,51,,543,0,64,230,564,3,1]
+                var brook =robin.filter(Number1=>Number1%2!==0)
+                console.log(brook)
+
+                // REDUCE 
+                 var object=[{
+                shirtname:'zara',
+                quantity:5,
+                price:800
+
+                 },
+                 {
+                  shirtname:'jockey',
+                  quantity:5,
+                  price:500
+                 }
+
+                ];
+                var object1=object.reduce((acc,jasmin)=>(acc+jasmin.price*jasmin.quantity),0)
+                console.log(object1)
+                var object2 =object[0].shirtname+' : '.concat(object1)
+                console.log(object2)
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            
+                // For each
+
+                var zoro1 =[1,2,3,4,5]
+                zoro1.forEach(luffy=>{
+                  luffy=luffy%2==0
+                  console.log(luffy)
+
+                })
+
+                // map 
+
+                var robin1=[7,8,9,6,5,4]
+                var robin2=robin1.map(Number=>Number+2)
+                console.log(robin2)
+
+                // filter
+
+                var nami1=[1,2,3,4,5,6,7,8,9,10,11,12,13]
+                var nami2=nami1.filter(Number=>Number>5)
+                console.log(nami2)
+                 
+                // Reduce
+
+                var brook=[{
+                  mobile:'iphone',
+                  quantity:2,
+                  price:80000
+
+                },
+                {
+                  mobile:'smasung',
+                  quantity:2,
+                  price:-90000
+                },
+              ];
+              var brook1=brook.reduce((acc,sanji)=>(acc-sanji.price*sanji.quantity),0)
+              console.log(brook1)
+
+                
+
+
+
+
+
+
+
+                </script>
+                           
+
+            
+</body>
+</html>

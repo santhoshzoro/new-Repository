@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    SCOPE: visibility of  a value
+
+    (global scope) (local-(functionl)) (block)
+
+    GLOBAL SCOPE: variable access accross the file
+
+    local scope :variable access with in the function (functionl)
+
+    block scope : variable declared using var,let or const in side a block ({})
+
+    <script>
+        // global
+
+        var please='please take it'
+        function abc(){
+            console.log(please)
+        }
+        abc()
+
+        // local
+
+        function ghi(){
+            var abd='abrahim benjimen develiers'
+            console.log(abd)
+        }
+        ghi()
+
+        // block
+
+        {
+            var vk='virat kohli'
+            console.log(vk)
+        }
+
+
+// ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+  
+        if(true){
+            var pack='you have succesfully recived your order'
+            console.log(pack)
+
+        }else{
+            console.log("you haven't revived your order")
+
+        }
+        
+
+    </script>
+
+    <script>
+
+
+        var name='luffy'
+        function ally(){
+            console.log(name)
+        }
+        ally()
+// ...............................................................        
+
+        function not(){
+            var a=15
+            console.log(a)
+        }
+        not()
+// ................................................................ 
+
+        {
+
+            var max='maximum'
+            console.log(max)
+
+        }
+// .................................................................
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+        .cut{
+
+            text-decoration: line-through;
+        }
+        .maincontainer{
+            display: flex;
+            justify-content: space-around;
+        
+        }
+    </style>
+</head>
+<body>
+    <h1><i><b>WELCOME TO AllenSolly </b></i></h1>
+    <div class="maincontainer">
+        <div class="1stshirt">
+            <img src="https://tse1.mm.bing.net/th?id=OIP.cKJZgz4vrAHrrHYBTekldQHaHa&pid=Api&P=0&h=220" alt="">
+            <div class="firstshirt">
+                <h2>|Allensolly Shirt|</h2>
+                <p>
+                    <span id="shirtprice"></span>
+                    <span id='linethrough'class="cut"></span>
+                    <span id="discount"></span>
+                </p>
+                <p>
+                    <span id="rating"></span>
+                    <i class="bi bi-star-half"></i>
+                </p>
+                <p>
+                    <span id="deliverydate"></span>
+                </p>
+                <p>
+                    <button onclick='buynow()'>Buy Now</button>
+                    <button onclick='addtocart()'>Add To Cart</button>
+                </p>
+                <p id="add1"></p>
+
+            </div>
+        </div>
+
+        <div class="2stshirt">
+            <img src="https://tse3.mm.bing.net/th?id=OIP.mQGgFyiYoq_se_RgJc4OlAHaLF&pid=Api&P=0&h=220" alt="">
+            <div class="secondshirt">
+                <h2>|Allensolly Printed Shirt|</h2>
+                <p>
+                    <span id="shirtprice1"></span>
+                    <span id='linethrough1'class="cut"></span>
+                    <span id="discount1"></span>
+                </p>
+                <p>
+                    <span id="rating1"></span>
+                    <i class="bi bi-star-half"></i>
+                </p>
+                <p>
+                    <span id="deliverydate1"></span>
+                </p>
+                <p>
+                    <button onclick='buynow()'>Buy Now</button>
+                    <button onclick='addtocart()'>Add To Cart</button>
+                </p>
+                <p id="add1"></p>
+    
+            </div>
+        </div>
+    </div>
+    <script>
+        var  price1='1499'
+        document.getElementById('shirtprice').innerHTML=price1;
+        var through1='1699'
+        document.getElementById('linethrough').innerHTML=through1;
+        var  offers1='Extra 5% off on sale '
+        document.getElementById('discount').innerHTML=offers1;
+        var rating1='4.2'
+        document.getElementById('rating').innerHTML=rating1;
+        var deliverydate1='Estimated delivery on 20 sep mon'
+        document.getElementById('deliverydate').innerHTML=deliverydate1;
+        // ........................................................................ 
+
+        var  price1='1499'
+    document.getElementById('shirtprice1').innerHTML=price1;
+    var through1='1699'
+    document.getElementById('linethrough1').innerHTML=through1;
+    var  offers1='Extra 5% off on sale '
+    document.getElementById('discount1').innerHTML=offers1;
+    var rating1='4.2'
+    document.getElementById('rating1').innerHTML=rating1;
+    var deliverydate1='Estimated delivery on 20 sep mon'
+    document.getElementById('deliverydate1').innerHTML=deliverydate1;
+    </script>
+
+
+<!-- <div class="maincontainer1">
+    <div class="2stshirt">
+        <img src="https://tse3.mm.bing.net/th?id=OIP.mQGgFyiYoq_se_RgJc4OlAHaLF&pid=Api&P=0&h=220" alt="">
+        <div class="secondshirt">
+            <h2>|Allensolly Printed Shirt|</h2>
+            <p>
+                <span id="shirtprice1"></span>
+                <span id='linethrough1'class="cut"></span>
+                <span id="discount1"></span>
+            </p>
+            <p>
+                <span id="rating1"></span>
+                <i class="bi bi-star-half"></i>
+            </p>
+            <p>
+                <span id="deliverydate1"></span>
+            </p>
+            <p>
+                <button onclick='buynow()'>Buy Now</button>
+                <button onclick='addtocart()'>Add To Cart</button>
+            </p>
+            <p id="add1"></p>
+
+        </div>
+    </div>
+</div> -->
+<!-- <script>
+    var  price1='1499'
+    document.getElementById('shirtprice1').innerHTML=price1;
+    var through1='1699'
+    document.getElementById('linethrough1').innerHTML=through1;
+    var  offers1='Extra 5% off on sale '
+    document.getElementById('discount1').innerHTML=offers1;
+    var rating1='4.2'
+    document.getElementById('rating1').innerHTML=rating1;
+    var deliverydate1='Estimated delivery on 20 sep mon'
+    document.getElementById('deliverydate1').innerHTML=deliverydate1;
+</script> -->
+
+</body>
+</html>

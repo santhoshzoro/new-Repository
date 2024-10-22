@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    .a{
+         background-color: #f0b801; 
+         width: 250px;
+         height: 200px;
+         color: black; 
+         border-radius: 5px; 
+         border: none; 
+         box-shadow: 5px 5px 5px lightgray;
+         margin-bottom: 5px;
+         padding: 8px; 
+         margin-top: 150px;
+
+    }
+    button{
+        background-color:tomato; 
+        width: 250px;
+        color: rgb(253, 247, 247); 
+         border-radius: 5px; 
+         border: none; 
+         box-shadow: 5px 5px 5px lightgray;
+         padding: 8px;
+         margin-top: 10px;
+        
+        
+    }
+    input{
+        padding: 5px;
+    }
+</style>
+<body style="font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">
+    <center>
+
+        <div class="a">
+
+        <div>
+                <label for="">Enter Name</label>
+              <input type="text" placeholder="Enter your name">
+        </div>
+    
+        <div>
+            <label for="">Enter Email</label>
+            <input type="email" placeholder="Enter your email">
+        </div>
+    
+        <div>
+            <label for="">Enter password</label>
+            <input type="password" placeholder="Enter your password">
+        </div>
+    
+        <div>
+            <label for="">confirm password</label>
+            <input type="password" placeholder="confirm your password  ">
+
+        </div>
+        
+
+        </div>
+
+        <button onclick="signup()">sign-up</button>
+        <script>
+            function signup(){
+                window.location.href='./LOGIN.html'
+                
+            }
+
+        </script>
+        
+     
+    </center>
+    
+
+
+
+    
+</body>
+</html>

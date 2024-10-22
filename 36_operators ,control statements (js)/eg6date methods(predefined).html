@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    predefined methods: [array,object,string,date]
+
+    DATE METHODS : 
+    dd/mm/yyyy - mm/dd/yyyy - mm/dd/yy 
+
+    GET METHODS : helps to retrive value 
+                    
+                  1.getDate() 
+                  2.getDay()
+                  3.getFullYear()
+                  4.getHours()
+                  5.getMinutes()
+                  6.getseconds()
+                  7.getMonth()
+
+    
+
+    SET METHODS : helps to update the value 
+    
+                1.setDate() 
+                2.setDay()
+                3.setFullYear()
+                4.SetHours()
+                5.setMinutes()
+                6.setSeconds()
+                7.setMonth()
+
+    #syntax :
+     
+    var dateObject=new Date();
+
+    <script>
+
+        var dateObject=new Date();
+        console.log(dateObject)
+
+        console.log(dateObject.getDate())
+        console.log(dateObject.getDay())
+        console.log(dateObject.getFullYear())
+        console.log(dateObject.getHours())
+        console.log(dateObject.getMinutes())
+        console.log(dateObject.getSeconds())
+
+        var time=`${dateObject.getDate()} / ${dateObject.getMonth()+1} / ${dateObject.getFullYear()}`
+        console.log(time)
+
+        var timeDetails = `${dateObject.getMonth()+1}/${dateObject.getDate()}/${dateObject.getFullYear()}`
+        console.log(timeDetails)
+        
+        var object=`${dateObject.getHours()>12? dateObject.getHours()-12 :dateObject.getHours()}:${dateObject.getMinutes()} ${dateObject.getHours()>12?'PM':'AM'}`
+        console.log(object)
+
+        
+
+   
+      dateObject.setFullYear(2025)
+      dateObject.setMonth(8)+1
+      dateObject.setDate(12)
+
+      console.log(dateObject)
+
+    //   .............................................................................................................................................................................
+
+    </script>
+
+    
+    
+                 
+                     
+    
+</body>
+</html>

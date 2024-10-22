@@ -1,0 +1,295 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+    body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    /* background-color: gainsboro; */
+    }
+    .nav{
+    display: flex;
+    /* justify-content: space-between; */
+    list-style: none;
+    padding: 10px;
+    font-size: 15px;
+    }
+    li{
+    margin-left: 150px;
+    font-size: 15px;
+    
+    }
+    .search{
+    width: 100%;
+    background-color:#2873f0;
+    color: black;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px;
+    text-decoration: none;
+
+    }
+    i{
+    /* margin-left: 20px; */
+    margin-right: 10px;
+    }
+    input{
+    width: 300px;
+    padding: 8px;
+    border: none;
+    border: 1px solid gray;
+    background-color: lightsteelblue;
+    border-radius: 5px;
+    color: black;
+    height: 30px;
+    
+    }
+    .tv{
+    color: black;
+    text-decoration: none;
+    }
+    .ip1{
+        color: black;
+         text-decoration: none;
+
+    }
+    .pranav{
+        text-decoration: none;
+        color: white;
+    }
+    .deepak{
+        display: flex;
+        justify-content: space-evenly;
+        background-color: black;
+        padding: 15px;
+    }
+    .sec{
+        color: white;
+    }
+    /* .................................(body)........................................... */
+    .firstclass{
+        display: flex;
+        justify-content: space-around;
+        text-decoration: none;
+        color: black;
+    }
+    .cs11{
+        text-decoration: none;
+        color: black;
+    }
+    a{
+        text-decoration: none;
+        text-align: center;
+    } 
+    
+    .f1{
+        border: 2px solid black;
+        padding: 5px;
+        border-radius: 5px;
+    }
+    .cs22{
+        text-decoration: none;
+        color: black;
+    }     
+    .f2{
+        border: 2px solid black;
+        padding: 5px;
+        border-radius: 5px;
+    }
+    .cs33{
+        text-decoration: none;
+        color: black;
+    }
+      
+    .f3{
+        border: 2px solid black;
+        padding: 5px;
+        border-radius: 5px;
+    }
+    .cs44{
+        text-decoration: none;
+        color: black;
+    }
+      
+    .f4{
+        border: 2px solid black;
+        padding: 5px;
+        border-radius: 5px;
+    }
+    .cs55{
+        text-decoration: none;
+        color: black;
+    }
+      
+    .f5{
+        border: 2px solid black;
+        padding: 5px;
+        border-radius: 5px;
+    }
+    .secondclass{
+        display: flex;
+        justify-content: space-around;
+        text-decoration: none;
+        color: black;
+    }
+    .banana11{
+        text-decoration: none;
+        color: black;
+    }
+    a{
+        text-decoration: none;
+        text-align: center;
+    } 
+    
+    .f11{
+        border: 2px solid black;
+        padding: 5px;
+        border-radius: 5px;
+    }
+    .banana22{
+        text-decoration: none;
+        color: black;
+        text-align: center;
+    }
+    .f12{
+        border: 2px solid black;
+        padding: 5px;
+        border-radius: 5px;
+    }
+    .banana33{
+        text-decoration: none;
+        color: black;
+    }
+    .f13{
+        border: 2px solid black;
+        padding: 5px;
+        border-radius: 5px;
+    }
+    .banana44{
+        text-decoration: none;
+        color: black;
+    }
+    .f14{
+        border: 2px solid black;
+        padding: 5px;
+        border-radius: 5px;
+    }
+    .banana55{
+        text-decoration: none;
+        color: black;
+    }
+    .f15{
+        border: 2px solid black;
+        padding: 5px;
+        border-radius: 5px;
+    }
+    .Thirdclass{
+        display: flex;
+        justify-content: space-around;
+        text-decoration: none;
+        color: black;
+    }
+    .grape11{
+        text-decoration: none;
+        color: black;
+    }
+    a{
+        text-decoration: none;
+        text-align: center;
+    } 
+    
+    .f21{
+        border: 2px solid black;
+        padding: 5px;
+        border-radius: 5px;
+    } 
+    .grape22{
+        text-decoration: none;
+        color: black;
+        text-align: center;
+    }
+    .f22{
+        border: 2px solid black;
+        padding: 5px;
+        border-radius: 5px;
+    } 
+    .grape33{
+        text-decoration: none;
+        color: black;
+    }
+    .f23{
+        border: 2px solid black;
+        padding: 5px;
+        border-radius: 5px;
+    } 
+    .grape44{
+        text-decoration: none;
+        color: black;
+    }
+    .f24{
+        border: 2px solid black;
+        padding: 5px;
+        border-radius: 5px;
+    } 
+    .grape55{
+        text-decoration: none;
+        color: black;
+    }
+    .f25{
+        border: 2px solid black;
+        padding: 5px;
+        border-radius: 5px;
+    } 
+    .Fourthclass{
+        display: flex;
+        justify-content: space-around;
+        text-decoration: none;
+        color: black;
+    }
+    .bat11{
+        text-decoration: none;
+        color: black;
+    }
+    a{
+        text-decoration: none;
+        text-align: center;
+    } 
+    
+    .f31{
+        border: 2px solid black;
+        padding: 5px;
+        border-radius: 5px;
+    }
+    .bat22{
+        text-decoration: none;
+        color: black;
+        text-align: center;
+    } 
+    .f32{
+        border: 2px solid black;
+        padding: 5px;
+        border-radius: 5px;
+    }
+    .bat33{
+        text-decoration: none;
+        color: black;
+    } 
+    .f33{
+        border: 2px solid black;
+        padding: 5px;
+        border-radius: 5px;
+    }
+    .bat44{
+        text-decoration: none;
+        color: black;
+    } 
+    .f34{
+        border: 2px solid black;
+        padding: 5px;
+        border-radius: 5px;
+    }
+    .bat55{
+        text-decoration: none;
+        color: black;
+    } 
+    .f35{
+        border: 2px solid black;
+        padding: 5px;
+        border-radius: 5px;
+    }

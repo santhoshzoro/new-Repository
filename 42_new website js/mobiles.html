@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+      .container{
+         display: flex;
+         margin-left: 10px;
+         /* border-radius: 5px solid black; */
+      }   
+      .container1{
+         margin-left: 60px;
+      }
+      .a1{
+     text-decoration:line-through ;
+      }
+      .container2{
+         display: flex;
+         margin-left: 10px;
+
+      }
+      .container3{
+         margin-left: 50px;
+      }
+      .buttons{
+         margin-left: 60px;
+         margin-top: 50px;
+         padding:6px;
+         
+      }
+      .samsung{
+         display: flex;
+         margin-left: 80px;
+      }
+      .sammob{
+         margin-left: 80px;
+      }
+      .cut{
+         text-decoration: line-through;
+      }
+      .samsung1{
+        display: flex;
+         margin-left: 80px;
+      }
+      .sammob1{
+         margin-left: 80px;
+
+      }
+      
+    </style>
+</head>
+<body>
+      <h2><i>Iphone</i></h2>
+      <div class="container">
+            <img src="https://tse1.mm.bing.net/th?id=OIP.SfmPBsJpiVWaJDoB7KrOsQHaFO&pid=Api&P=0&h=220" alt="">
+         <div class="container1"> 
+            <h1 id="mobilename"></h1>
+
+         <p>
+            <span id="MRP" ></span>
+            <span id="cut" class="a1"></span>
+            <span id="offers"></span>
+
+         </p>   
+            <p id="Emi"></p>
+           <p>
+            <span id="rating"></span>
+            <i class="bi bi-star-half"></i>
+           </p> 
+           <p id="deliverydate"></p>
+           
+         </div> 
+        <div class="buttons">
+         <button onclick="buynow()" id="mul">BuyNow</button>
+         <button onclick="addtocart()">Add to Cart</button>
+        </div>
+</div>
+
+      </div>
+      <script>
+         var mobileName='|Apple 16 pro max (1Tb)|'
+         document.getElementById('mobilename').innerHTML=mobileName;
+         var MRP ='|1,50,000|'
+         document.getElementById('MRP').innerHTML=MRP;
+         var strike='1,69,000'
+         document.getElementById('cut').innerHTML=strike;
+         var discount=' discount upto 5% on sbi credit card '
+         document.getElementById('offers').innerHTML=discount;
+         var Emi='Emi starts from 3,495/month'
+         document.getElementById('Emi').innerHTML=Emi;
+         var rating ='4.5'
+         document.getElementById('rating').innerHTML=rating;
+         var delivery='Estimated delivery sep 17 2024'
+         document.getElementById('deliverydate').innerHTML=delivery;
+
+         function buynow(){
+               window.location.href='./buynow.html'
+               
+         }
+
+      </script>
+
+<div class="container2">
+   <img src="https://tse3.mm.bing.net/th?id=OIP.wehCB4pINms_VZKJm4NPtgHaFA&pid=Api&P=0&h=220" alt="">
+    <div class="container3"> 
+      <h1 id="mobilename1"></h1>
+   
+   <p>
+      <span id="MRP1" ></span>
+      <span id="cut1" class="a1"></span>
+      <span id="offers1"></span>
+   
+   </p>   
+      <p id="Emi1"></p>
+     <p>
+      <span id="rating1"></span>
+      <i class="bi bi-star-half"></i>
+     </p> 
+     <p id="deliverydate1"></p>
+   </div>
+   <div class="buttons">
+      <button onclick="buynow()">BuyNow</button>
+      <button onclick="addtocart()">Add to Cart</button>
+     </div>
+</div>
+<script>
+   var mobileName='|Apple 15 (256 TB)|'
+   document.getElementById('mobilename1').innerHTML=mobileName;
+   var MRP ='|1,30,000|'
+   document.getElementById('MRP1').innerHTML=MRP;
+   var strike='1,49,000'
+   document.getElementById('cut1').innerHTML=strike;
+   var discount=' discount upto 5% on HDFC credit card '
+   document.getElementById('offers1').innerHTML=discount;
+   var Emi='Emi starts from 2,995/month'
+   document.getElementById('Emi1').innerHTML=Emi;
+   var rating ='4.4'
+   document.getElementById('rating1').innerHTML=rating;
+   var delivery='Estimated delivery sep 18 2024'
+   document.getElementById('deliverydate1').innerHTML=delivery;
+
+
+
+</script>
+
+<h2><i>Samsung</i></h2>
+<div class="samsung">
+   <a href=""><img src="https://tse1.mm.bing.net/th?id=OIP.tuyTFaew8LIw5fg9z-0HzAHaHa&pid=Api&P=0&h=220" alt="" id="" class=""></a>
+   <div class="sammob">
+      <h1 id="sammobile"></h1>
+      
+      <p>
+         <span id="samprice"></span>
+         <span id="samcut" class="cut"></span>
+         <span id="samoffers"></span>
+      </p>
+      <p>
+         <span id="samemi"></span>
+      </p>
+      <p>
+         <span id="samrating"></span>
+         <i class="bi bi-star-half"></i>
+         
+      </p>
+      <p>
+         <span id="samdelivery"></span>
+      </p>
+     
+   </div>
+   <div class="sambuttons">
+      
+      <button onclick="Buynow()">BuyNow</button>
+      <button onclick="addtocart()">Add To Cart</button>
+   
+</div>
+   
+</div>
+
+<script>
+   var samMobiles1='Samsung S24 ultra'
+   document.getElementById('sammobile').innerHTML=samMobiles1;
+   var samPrice1='1,24,000'
+   document.getElementById('samprice').innerHTML=samPrice1;
+   var samCut1='1,55,000'
+   document.getElementById('samcut').innerHTML=samCut1;
+   var samOffers1='extra 5% off on sbi credit card'
+   document.getElementById('samoffers').innerHTML=samOffers1;
+   var samEmi1='Emi starts from 4,600/month'
+   document.getElementById('samemi').innerHTML=samEmi1;
+   var samRating1='4.7'
+   document.getElementById('samrating').innerHTML=samRating1;
+   var samDelivery1='Estimated delivery sep 14 2024'
+   document.getElementById('samdelivery').innerHTML=samDelivery1;
+</script>
+
+<div class="samsung1">
+   <a href=""><img src="https://tse1.mm.bing.net/th?id=OIP.RuWdESh4jOMSDKUapZ2ATgHaHa&pid=Api&P=0&h=220" alt="" id="" class=""></a>
+   <div class="sammob1">
+      <h1 id="sammobile1"></h1>
+      
+      <p>
+         <span id="samprice1"></span>
+         <span id="samcut1" class="cut"></span>
+         <span id="samoffers1" ></span>
+      </p>
+      <p>
+         <span id="samemi1"></span>
+      </p>
+      <p>
+         <span id="samrating1"></span>
+         <i class="bi bi-star-half"></i>
+         
+      </p>
+      <p>
+         <span id="samdelivery1"></span>
+      </p>
+      
+   </div>
+   <div class="sambuttons">
+         
+      <button onclick="Buynow()">BuyNow</button>
+      <button onclick="addtocart()">Add To Cart</button>
+   </div>
+   
+</div>
+
+<script>
+   var samMobiles2='Samsung flip'
+   document.getElementById('sammobile1').innerHTML=samMobiles2;
+   var samPrice2='1,54,000'
+   document.getElementById('samprice1').innerHTML=samPrice2;
+   var samCut2='1,65,000'
+   document.getElementById('samcut1').innerHTML=samCut2;
+   var samOffers2='extra 5% off on canara credit card'
+   document.getElementById('samoffers1').innerHTML=samOffers2;
+   var samEmi2='Emi starts from 5,600/month'
+   document.getElementById('samemi1').innerHTML=samEmi2;
+   var samRating2='4.6'
+   document.getElementById('samrating1').innerHTML=samRating2;
+   var samDelivery2='Estimated delivery sep 16 2024'
+   document.getElementById('samdelivery1').innerHTML=samDelivery2;
+</script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>OPERATORS</h1>
+    <h2>ARTHAMETIC , ASSIGNMENT,COMPARISION,LOGICAL,TERINANRY OPERATOR</h2>
+     <p>
+        <li>
+            <ul>
+                <li>1 - +,-,*,/,%,++,--.</li>
+                <li>2 - short end operator (+=,-=,*=,/=,%=,=)</li>
+                <li> 3- ===(check the value and data type) , == (checks only value), != ,!==,>,>=,<,<=. </li>
+                <li>4 - && (if both conditions are true , returns true ), || (any condition true, returns true) ,!(false,true).</li>
+              <li>  5 - ?</li>
+    
+            </ul>
+
+        </li>
+
+        CRUD OPERATORS :
+    c - create
+    r- read
+    u- update
+    d- delete 
+       
+       
+     </p>
+
+     <script>
+
+     // ARTHAMETIC :
+        a=50
+        b=20
+        c=a+b
+        d=a-b
+        e=c*d
+        f=a/d
+        h=b%c
+
+        console.log(c)
+        console.log(d)
+        console.log(e)
+        console.log(f)
+        console.log(h)
+        
+
+        var arthamatic =0
+        arthamatic++
+        arthamatic++
+        console.log(arthamatic)
+        arthamatic--
+        console.log(arthamatic)
+
+        var number=2
+        number--
+        console.log(number)
+        
+        // ................................................................/
+
+        // ASSIGNMENT: 
+        const orderDetails=[{
+        
+            name:'priya pickels',
+            amount:100,
+        },
+        {
+
+            name:'priya fruits',
+            amount:300,
+
+        },
+        {
+            name:'priya drinks',
+            amount:500,
+        },
+
+        ];
+        
+       var bill =0;
+        bill+=orderDetails[0].amount 
+        bill-=orderDetails[1].amount
+        bill/=orderDetails[2].amount
+
+        console.log(bill)
+
+        // ..............................................................
+
+
+        // COMPARISION:
+        var number=69
+        var number1=69
+        var number2=number===number1
+        console.log(number2)
+
+        // ..................................................................................../
+
+
+        // logical :
+
+        var santhosh=false
+        var priya=false
+        var correct=!priya
+        var correct1=!santhosh
+        console.log(correct,correct1)
+
+        var email='santhosh@gmail.com'
+        var number=123654789
+        var email1='jasmin@gmail.com'
+        var number1=123654789
+
+        var number3=email==email1||number==number1
+        console.log(number3)
+
+        
+        var email='santhosh@gmail.com'
+        var number=123654789
+        var email1='santhosh@gmail.com'
+        var number1=123654789
+
+        var number3=email==email1&&number==number1
+        console.log(number3)
+        
+
+
+        // ........................................................................................................./
+
+        // TERINANRY OPERATOR:
+        var number=69
+        var number1=69 
+        var number3=number==number1?'execute this after competion':'do not execute if not competion'
+        console.log(number3)
+
+        // ......................................................................................................
+
+
+
+     </script>
+</body>
+</html>

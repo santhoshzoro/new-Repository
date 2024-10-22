@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+
+    <p id="crazyshit"></p>
+
+     CRUD OPERATORS :
+    c - create
+    r- read
+    u- update
+    d- delete
+
+    <script>
+        // var  variableName =[value1,value2,...valuen]
+
+        // var onePeice = ['lufffy','zoro','sanji','chopper']
+        // console.log(onePeice)
+        // onePeice[2]='sasuke'
+        // console.log(onePeice[0])
+        // console.log(onePeice.length)
+        // onePeice.splice(2,2)
+        // console.log(onePeice)
+
+
+        var narutoShippiden = ['naruto','sasuke','shikamaru','obito']
+        console.log(narutoShippiden)
+        narutoShippiden[2]='onion hospital patient'
+        console.log(narutoShippiden[3])
+        console.log(narutoShippiden.length)
+        narutoShippiden.splice(2,1)
+        console.log(narutoShippiden)
+
+
+    //  .........................................................................................................................................................
+
+
+         //OBJECTS : collection of keys and value 
+        // var variableName ={
+        //     property1 :value1, 
+        //     property2 :value2,.....................n
+
+        // } 
+       
+        var studentDetails = {
+            name : 'riya',
+            id: 1234456789,
+            branch:'cse',
+            age :105,
+            mobileno : 987654321
+
+        }
+        console.log(studentDetails)
+        studentDetails['age']=21
+        console.log(studentDetails)
+        var studentData= studentDetails.name
+        console.log(studentData)
+
+
+// .....................................................
+
+      var dataOfStudents = {
+            name :"kamal",
+            age: 25,
+            batch: 2024,
+            sec:"a",
+            id:123456789,
+            mobileno:987654321
+
+        }
+
+        console.log(dataOfStudents)
+        dataOfStudents['mobileno']=321654987
+        console.log(dataOfStudents)
+        var javaScript=dataOfStudents.batch
+        console.log(javaScript)
+
+
+
+
+
+
+// ............................................................................................................................ARRAY.......................................
+        var textBook =['telugu','english','hindi','physics']
+
+        console.log(textBook)
+        console.log(textBook[1])
+        textBook[1]='chemistry'
+        console.log(textBook.length)
+        textBook.splice(2,1)
+        console.log(textBook)
+
+// ..........................................................................................................................
+
+
+
+
+// Array of objects : combination of both array and objects 
+// var variableNAme=[
+//     {
+//           key : value,
+//     },
+//     {
+//         key : value,
+//     },
+//     .
+//     .
+//     .
+//     .
+
+// ];
+
+
+
+
+
+
+
+var studentDetails1 =[
+    {
+        name:'raj',
+        age:20,
+        mobile:3216549877
+    },
+    {
+        name:'rani',
+        age:22,
+        mobile:9876543621
+    },
+    {
+        name:'pant',
+        age:20,
+        mobile:321654789
+    },
+];
+
+console.log(studentDetails1)
+console.log(studentDetails1.splice(2,1))
+console.log(studentDetails1.length)
+console.log(studentDetails1[1])
+console.log(studentDetails1[1].age)
+
+
+
+
+
+
+
+ 
+var movieName='inception'
+document.getElementById('crazyshit').innerHTML=movieName
+console.log(movieName)
+ 
+
+
+
+    </script>
+</body>
+</html>

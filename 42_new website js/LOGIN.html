@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .a{
+         background-color: #f0b801; 
+         width: 250px;
+         height: 200px;
+         color: black; 
+         border-radius: 5px; 
+         border: none; 
+         box-shadow: 5px 5px 5px lightgray;
+         margin-bottom: 5px;
+         padding: 8px; 
+         margin-top: 150px;
+
+    }
+    button{
+        background-color:tomato; 
+        width: 250px;
+        color: rgb(253, 247, 247); 
+         border-radius: 5px; 
+         border: none; 
+         box-shadow: 5px 5px 5px lightgray;
+         padding: 8px;
+         margin-top: 10px;
+        
+        
+    }
+    input{
+        padding: 5px;
+    }
+    </style>
+</head>
+<body>
+    <center>
+
+        
+        <div class="a">
+            <div> 
+                <label for="">Enter email id:</label>
+                <input type="email"  placeholder="enter email" id="mul1">
+            </div>
+            <div>
+                <label for="">Enter password:</label>
+                <input type="password"  placeholder="enter password" id="mul2">
+            </div>
+            <button onclick="login()">Login</button>
+            <p id="sub1"></p> 
+        </div> 
+
+    </center>
+    
+
+    <script>
+        var details=[{
+            emailid :'santhoshreddy.ganapathi@gmail.com',
+            passwordid:'luffy'
+
+        },
+    ];
+            
+         function login(){
+            var email =document.getElementById('mul1').value ;
+            var password =document.getElementById('mul2').value;
+
+            if (details[0].emailid === email && details[0].passwordid === password) {
+                 window.location.href = './index.html';
+                 alert("Login successful!");
+            }
+            else{
+
+                document.getElementById('sub1').innerHTML='invalid user'
+            }
+
+        } 
+
+        
+        
+
+
+     </script>
+    
+</body>
+</html>
